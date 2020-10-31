@@ -1,0 +1,10 @@
+{
+	"command":"cat $infile | xargs -I @ curl -s 'https://crt.sh/?q=%25.@&output=json' | jq -r '.[].name_value' | sed 's/\*\.//g' | httpx -title -silent | anew > $outfile",
+	"box_infile":"input",
+	"box_outfile":"output",
+	"output_format":"txt",
+	"output_ext":"txt",
+	"output_dirs":"false",
+	"default_ports":"",
+	"default_args":""
+}

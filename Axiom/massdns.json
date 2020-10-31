@@ -1,0 +1,10 @@
+{ 
+	"command":"cat $infile | /usr/bin/massdns -r /home/op/lists/resolvers.txt $args -w $outfile",
+	"box_infile":"input",
+	"box_outfile":"output",
+	"output_format":"txt",
+	"output_ext":"txt",
+	"output_dirs":"false",
+	"default_ports":"",
+	"default_args":"-t A -o S"
+}
